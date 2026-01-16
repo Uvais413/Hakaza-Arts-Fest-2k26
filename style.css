@@ -184,3 +184,56 @@ body.dark-mode .about-text p {
 body.dark-mode .about-text strong {
     color: var(--accent);
 }
+/* Mobile-first responsive adjustments */
+@media (max-width: 768px) {
+    .navbar { height: 60px; padding: 0 10px; }
+    .nav-container { padding: 0 10px; }
+    .nav-logo { height: 40px; width: 40px; }
+    .brand-text h2 { font-size: 1rem; }
+    .control-btn { width: 40px; height: 40px; }
+
+    .side-menu { width: 250px; }
+    .menu-link { padding: 15px; font-size: 1rem; }
+
+    .hero { height: 80vh; padding: 20px; }
+    .hero-title { font-size: clamp(2rem, 8vw, 4rem); }
+    .stats-container { flex-direction: column; gap: 15px; }
+    .stat-box { padding: 10px 20px; min-width: 150px; }
+
+    .section { padding: 40px 10px; }
+    .section-title { font-size: 1.5rem; margin-bottom: 30px; }
+
+    .guest-card { min-width: 200px; padding: 15px; }
+    .guest-img-box img { width: 120px; height: 120px; }
+
+    .quick-grid { grid-template-columns: 1fr; gap: 15px; }
+    .quick-btn { padding: 20px; font-size: 0.9rem; }
+
+    .college-grid-modern { grid-template-columns: 1fr; gap: 20px; }
+    .col-card-3d { padding: 20px 15px; }
+
+    .search-box { width: 100%; max-width: none; }
+    .search-box input { padding: 12px 0; }
+    .search-box button { padding: 12px 25px; }
+
+    .champ-grid { grid-template-columns: 1fr; gap: 15px; }
+    .champ-card { padding: 15px; }
+
+    .topper-row { flex-direction: column; gap: 15px; }
+    .topper-box { min-width: 100%; }
+
+    .gallery-scroll-container { padding: 10px; }
+    .gallery-item { min-width: 200px; }
+    .gallery-item img { height: 300px; }
+
+    .feedback-btn { padding: 12px; font-size: 0.9rem; }
+
+    footer { padding: 30px 10px; text-align: center; }
+    .dev-btn { padding: 10px 20px; }
+}
+
+/* Ensure touch-friendly buttons */
+.control-btn, .col-btn, .quick-btn, .feedback-btn, .dev-btn {
+    min-height: 44px;
+    min-width: 44px;
+}
